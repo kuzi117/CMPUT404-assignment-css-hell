@@ -21,4 +21,15 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
+Contributors:
+  - Dayna Lacoursiere
+  - Poty Koukoulas
 
+Difference:
+  - Background image to feel like vellum.
+  - New fonts
+    - Serif fonts for headings, ToC
+    - Sans-serif for body
+    - Script for initial character of paragraphs
+  - Images with rounded corners and borders with better spacing between
+  paragraphs
