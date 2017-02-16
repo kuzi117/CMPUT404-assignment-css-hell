@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Source+Sans+Pro|Berkshire+Swash');
+body {
+  margin:5%;
+  background-image: url("../img/vellum.jpg");
+  text-align:justify
+}
+p {
+  text-indent: 1em;
+  margin-top: .25em;
+  margin-bottom: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+H1,H2,H3,H4,H5,H6 {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: 'Source Serif Pro', serif;
+}
+/*first paragraph letters*/
+span.dropcap {
+  float: left;
+  margin: 0 0.1em 0 0;
+  line-height: .8;
+  font-family: 'Berkshire Swash', cursive;
+}
+font {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 200%;
+}
+center {
+  font-style: bold;
+  /*font-size: 150%;*/
+  font-family: 'Source Serif Pro', serif;
+}
+table.bold {
+  font-weight: bold;
+  font-family: 'Source Serif Pro', serif;
+}
+hr  {
+  width: 50%;
+  text-align: center;
+}
+blockquote {
+  font-size: 97%;
+  font-style: italic;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.toc       {
+  margin-left: 10%;
+  margin-bottom: .75em;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+div.fig    {
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+div.book {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+}
+p.pfirst {
+  text-indent: 0
+}
+pre {
+  font-style: italic;
+  font-size: 90%;
+  margin-left: 10%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+img {
+  border-radius: 2%;
+  border-style: solid;
+  border-width: 1em;
+}
