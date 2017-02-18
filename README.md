@@ -33,3 +33,7 @@ Difference:
     - Script for initial character of paragraphs
   - Images with rounded corners and borders with better spacing between
   paragraphs
+
+References:
+ - Good banner: https://static1.squarespace.com/static/54641761e4b074f954dd11d2/546706b0e4b09af07e4c746f/581d3b6f37c581a0038d9b6d/1478634770378/banner_blue.gif?format=2500w
+ - Flames gif: http://rs343.pbsrc.com/albums/o467/bncriss_bucket/flames.gif~c200
