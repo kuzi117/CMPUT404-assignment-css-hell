@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Braedy Kuzma</title>
+    <link rel="stylesheet" type="text/css" href="static/css/bad.css"/>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="static/js/extra.js"/> -->
+  </head>
+  <body>
+    <div class="titleBar">
+      <span class="midVAlign">
+        Braedy Kuzma
+      <span>
+    </div>
+    <div class="sidebarOverlay">
+      <div onclick="scrollAbout()">
+        <img src="static/img/triangle.png" alt="triangle" class="inlineImg"/>
+        <span><a href="#about" class="samePage">About Me</a></span>
+      </div>
+      <div onclick="scrollHistory()">
+        <img src="static/img/triangle.png" alt="triangle" class="inlineImg"/>
+        <a href="#history" class="samePage">History</a>
+      </div>
+      <div onclick="scrollGains()">
+        <img src="static/img/triangle.png" alt="triangle" class="inlineImg"/>
+        <a href="#gains" class="samePage">Potential Gains</a>
+      </div>
+    </div>
+    <div class="sectionContainer">
+      <div class="section">
+        <div class="sectionHeader" id="about">
+          About Me
+        </div>
+        <div class="SectionBody">
+          <div class="wrapText">
+            <img src="static/img/face.jpg" alt="My face" class="portrait"/><br/>
+              <a href="mailto://braedy@ualberta.ca">braedy@ualberta.ca</a><br/>
+              <a href="https://ca.linkedin.com/in/braedy-kuzma-a7527060">LinkedIn</a><br/>
+              <a href="https://github.com/kuzi117">GitHub</a><br/>
+          </div>
+          <p>
+            I'm a fourth year Computing Science undergraduate at the University of Alberta with plans to complete at least a MSc after graduation.
+            I have interests in video game design, compiler design and optimization, as well as artificial intelligence.
+            My picture suggests otherwise, but I have very long hair.
+          </p>
+          <p>
+            Some interesting tidbits about me include:
+          </p>
+          <ul class="aboutMeList">
+            <li>
+              There is a small patch of white hair on my head that my friends claim marks me as a wizard
+            </li>
+            <li>
+              I have a fraternal twin brother named Landon, and two sisters: Madison and Payton
+            </li>
+            <ul>
+              <li>
+                Clearly my parents have a fascination with names that end in "-on". My real name is secretly Braedon.
+              </li>
+            </ul>
+            <li>
+              I did an internship at IBM in Markham, Ontario.
+            </li>
+            <li>
+              All of my closest friends are graduating this year and I am not. It's a sad time.
+            </li>
+            <li>
+              I have pierced nipples (my ex made me do it)
+            </li>
+            <li>
+              My friends like to call me &#x1f35e;.
+            </li>
+          </ul>
+          <p>
+            I am an active member of two clubs at the University. The Video Game Art &amp; Design club (VGAD) and the Undergraduate Association of Computing Science (UACS).
+            Both of these clubs have taught me valuable skills that I will use later in life. I've been refereeing hockey for years. I once got a puck to the face which caused me to lose two teeth (they got replaced).
+          </p>
+          <p>
+            I like programming jokes and browsing the internet. If I realize I don't know something, I immediately google it so I can learn everything about it. I now know a little bit of everything.
+            I am very good at math and my friends say I have a bad taste in anime. I like to help people solve problems, so I'm often the person people in UACS turn to.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionHeader" id="history">
+        Professional History
+        </div>
+        <div class="SectionBody">
+          <p>
+            <ul class="resume">
+              <li>
+                <div>
+                  <span>Internship as PL/X Quality Assurance for Z-Syztems @ IBM</span><span class="date">September 2015 - March 2016</span>
+                </div>
+                <div class="upSpace">
+                  PL/X is an internal language for Z-Systems. It's a very low level language meant to replace assembly on Z-Systems.
+                  Testing involved investigating failing functional tests and creating reports for the development teams to fix.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>Internship as LLVM/Swift Backend Compiler Developer for Z-Syztems @ IBM</span><span class="date">April 2016 - September 2016</span>
+                </div>
+                <div class="upSpace">
+                  I became familiar with IBM Z-System mainframes while developing a backend for LLVM.
+                  This also meant learning a new object file format (GOFF) and dealing with the intricacies of legacy corporate production code.
+                </div>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sectionHeader" id="gains">
+          Potential Gains
+        </div>
+        <div class="SectionBody">
+          <p>
+            By hiring me, employers would get a driven worker and learner.
+            I am an adept listener and team player willing to discus and design new and innovative solutions to problems.
+          </p>
+          <p>
+            I also bring a strong set of technical skills to any team. I have a strong mastery of C++ and Python. My experience at IBM has lent me a depth of understanding
+            when it comes to low-level system concepts. My acadmeic aspirations also drive me to continue to improve and gain new knowledge to provide evolving solutions
+            to a variety of problems.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      scrollAbout = function () {
+        return $("html, body").animate({
+          scrollTop: $("#about").offset().top + "px"
+        }, 700)
+      }
+      scrollHistory = function () {
+        return $("html, body").animate({
+          scrollTop: $("#history").offset().top + "px"
+        }, 700)
+      }
+      scrollGains = function () {
+        return $("html, body").animate({
+          scrollTop: $("#gains").offset().top + "px"
+        }, 700)
+      }
+    </script>
+    <!-- http://stackoverflow.com/questions/9350461/how-to-add-css-style-if-user-scroll-page-over-112px -->
+    <script type="text/javascript">
+      $(window).scroll(function(){
+
+      var a = 109;
+      var pos = $(window).scrollTop();
+      if(pos > a) {
+        $("div.sidebarOverlay").css({
+            position: 'fixed',
+            top: '10px'
+        });
+      }
+      else {
+        $("div.sidebarOverlay").css({
+            position: 'absolute',
+            top:'120px'
+        });
+      }
+      });
+    </script>
+  </body>
+</html>
