@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Bree+Serif|Roboto');
+body {
+  background-color: rgba(91,139,172,1);
+  margin: 0;
+}
+span.midVAlign {
+  vertical-align: middle;
+}
+div.titleBar {
+  padding-left: 15%;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 50pt;
+  color: white;
+  line-height: 100px;
+  margin-bottom: 10px;
+  background-image: url(../img/banner_blue.gif);
+  background-size: cover;
+}
+div.sidebarOverlay {
+  background-color: #4d7f9c;
+  position: absolute;
+  top: 120px;
+  margin-left: 1em;
+  padding: .5em;
+  border: 1.5em solid transparent;
+  border-image: url(../img/border.png) 54 round; /* https://www.w3schools.com/cssref/css3_pr_border-image.asp */
+  border-radius: 54px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+}
+div.sectionHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: 'Bree Serif', serif;
+}
+div.SectionBody {
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  clear:both;
+}
+div.sectionContainer {
+  position: absolute;
+  left: 15em;
+  right: 1em;
+  margin: auto;
+}
+div.section {
+  margin-bottom: 1em;
+  background-color: #4d7f9c;
+  border: 1.5em solid transparent;
+  border-image: url(../img/border.png) 54; /* https://www.w3schools.com/cssref/css3_pr_border-image.asp */
+  border-radius: 54px;
+  float:left;
+}
+div.wrapText {
+  float: right;
+  text-align: right;
+  margin: 1em;
+  margin-top: 0;
+  width:15%;
+}
+div.upSpace {
+  margin-top: 1em;
+}
+img.inlineImg {
+  height: 1em;
+  width: 0.5em;
+}
+img.portrait {
+  width: 100%;
+  border-radius: 10px;
+}
+span.date {
+  float: right;
+}
+a.samePage {
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+  font-size: 13pt;
+}
+a.samePage:active {
+  outline: none;
+}
+
+ul.aboutMeList {
+  margin-top: -16px;
+}
+ul.resume li {
+  margin-bottom: 1em;
+}
